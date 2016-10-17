@@ -1,0 +1,11 @@
+.team-container {
+  height: 200px;
+  width: 90%;
+  border: 1px solid #000;
+  display: block;
+}
+
+.vs {
+  margin: 20px 0;
+  text-align: center;
+}

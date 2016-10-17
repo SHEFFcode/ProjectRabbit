@@ -27,16 +27,16 @@ export class LeguedataService {
     return this.bracket;
   }
 
-  storeData() {
+  storeBracket() {
     const body = JSON.stringify(this.bracket);
     const headers = new Headers({
       'Content-Type': 'application/json'
     });
-    return this.http.put('https://recipebook-a4e2b.firebaseio.com/recipes.json', body, {headers});
+    return this.http.put('https://bracketking-91661.firebaseio.com/bracket.json', body, {headers});
   }
 
-  fetchData() {
-    return this.http.get('https://recipebook-a4e2b.firebaseio.com/recipes.json')
+  fetchBracket() {
+    return this.http.get('https://bracketking-91661.firebaseio.com/bracket')
       .map((response: Response) => response.json())
       .subscribe(
         (data: Bracket) => {

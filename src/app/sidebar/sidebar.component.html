@@ -2,18 +2,12 @@
   <div class="row">
     <div class="col-md-4 sidebar">
       <h3>Choose a sport</h3>
-      <select [(ngModel)]="binding" name="sport" id="sport-selector">
-        <option value="volleyball">volleyball</option>
-        <option value="softball">softball</option>
-        <option value="tennis">tennis</option>
-        <option value="soccer">soccer</option>
-        <option value="kickball">kickball</option>
+      <select [(ngModel)]="selectedSport.sport" name="sport" id="sport-selector">
+        <option *ngFor="let sport of sports" [value]="sport.sport">{{sport.sport}}</option>
       </select>
       <h3>Choose Your Legue</h3>
-      <select name="legue" id="legue-selector">
-        <option value="first-legue">first-legue</option>
-        <option value="second-legue">second-legue</option>
-        <option value=">third-legue">third-legue</option>
+      <select [(ngModel)]="selectedLegue.legue" name="legue" id="legue-selector">
+        <option *ngFor="let legue of legues" [value]="legue.legue">{{legue.legue}}</option>
       </select>
     </div>
     <div class="col-md-8">

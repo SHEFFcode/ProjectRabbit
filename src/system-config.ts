@@ -39,6 +39,8 @@ const barrels: string[] = [
   'app/header',
   'app/footer',
   'app/sidebar',
+  'app/brakcet-list',
+  'app/brakcet-item',
   /** @cli-barrel */
 ];
 

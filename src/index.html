@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <title>Rabbit</title>
   <base href="/">
+  <style>
+    body,
+    html {
+      height: calc(100% - 56px);
+    }
+  </style>
 
   {{#unless environment.production}}
   <script src="/ember-cli-live-reload.js" type="text/javascript"></script>

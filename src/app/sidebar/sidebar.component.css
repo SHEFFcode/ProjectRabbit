@@ -1,0 +1,25 @@
+.container {
+  margin: 0;
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.sidebar {
+  border-right: 1px solid #000;
+  height: 100%;
+}
+
+.team-container {
+  height: 200px;
+  width: 90%;
+  border: 1px solid #000;
+  display: block;
+}
+
+.vs {
+  margin: 20px 0;
+  text-align: center;
+}

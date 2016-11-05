@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output} from '@angular/core';
 import {Bracket} from "../legues/bracket";
 import {ActivatedRoute, Router, ROUTER_DIRECTIVES} from "@angular/router";
 

@@ -41,6 +41,8 @@ const barrels: string[] = [
   'app/sidebar',
   'app/brakcet-list',
   'app/brakcet-item',
+  'app/available-matchups',
+  'app/matchup-item',
   /** @cli-barrel */
 ];
 

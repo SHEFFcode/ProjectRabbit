@@ -4,13 +4,14 @@ import {BrakcetItemComponent} from "../bracket/brakcet-item.component";
 import {Legue} from "../legues/legue";
 import {SportList} from "../legues/sport-list";
 import {LeguedataService} from "../legues/leguedata.service";
+import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
   moduleId: module.id,
   selector: 'app-sidebar',
   templateUrl: 'sidebar.component.html',
   styleUrls: ['sidebar.component.css'],
-  directives: [BrakcetItemComponent]
+  directives: [BrakcetItemComponent, ROUTER_DIRECTIVES]
 })
 export class SidebarComponent implements OnInit {
   private legues: Legue[];

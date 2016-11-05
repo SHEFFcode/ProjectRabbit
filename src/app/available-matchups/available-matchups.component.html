@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <app-matchup-item *ngFor="let matchup of matchups; let i = index;" [matchup]="matchup" [matchupId]="i"></app-matchup-item>
+    </ul>
+  </div>
+</div>

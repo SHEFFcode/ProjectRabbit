@@ -43,6 +43,7 @@ const barrels: string[] = [
   'app/brakcet-item',
   'app/available-matchups',
   'app/matchup-item',
+  'app/add-bracket',
   /** @cli-barrel */
 ];
 

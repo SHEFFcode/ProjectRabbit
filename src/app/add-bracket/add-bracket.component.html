@@ -1,0 +1,36 @@
+  <h1>Add the matchup teams below</h1>
+  <div class="col-xs-12">
+    <form [formGroup]="matchupForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="team-one">Team One</label>
+            <input
+              type="text"
+              id="team-one"
+              class="form-control"
+              formControlName="team-one">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="team-two">Team Two</label>
+            <input
+              type="text"
+              id="team-two"
+              class="form-control"
+              formControlName="team-two">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success" [disabled]="!matchupForm.valid">Save</button>
+          <a class="btn btn-danger" (click)="onCancel()">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+

@@ -9,6 +9,7 @@
       <select [(ngModel)]="selectedLegue.legue" name="legue" id="legue-selector">
         <option *ngFor="let legue of legues" [value]="legue.legue">{{legue.legue}}</option>
       </select>
+      <a [routerLink]="['/addbracket']" class="btn btn-default">Add a matchup</a>
     </div>
     <div class="col-md-8">
       <router-outlet></router-outlet>

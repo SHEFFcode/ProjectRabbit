@@ -27,8 +27,9 @@ export class LeguedataService {
     return this.bracket;
   }
 
-  storeBracket() {
-    const body = JSON.stringify(this.bracket);
+  storeBracket(passedInBracket: Bracket) {
+    // const body = JSON.stringify(this.bracket);
+    const body = JSON.stringify(passedInBracket);
     const headers = new Headers({
       'Content-Type': 'application/json'
     });

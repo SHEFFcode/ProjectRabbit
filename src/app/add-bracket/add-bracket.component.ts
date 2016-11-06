@@ -1,5 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import {REACTIVE_FORM_DIRECTIVES, FormGroup} from "@angular/forms";
+import {LeguedataService} from "../legues/leguedata.service";
 
 @Component({
   moduleId: module.id,
@@ -10,7 +11,7 @@ import {REACTIVE_FORM_DIRECTIVES, FormGroup} from "@angular/forms";
 })
 export class AddBracketComponent implements OnInit, OnDestroy {
   matchupForm: FormGroup;
-  constructor() { }
+  constructor(private legueService: LeguedataService) { }
 
   ngOnInit() {
   }

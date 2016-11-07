@@ -23,12 +23,11 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this.legues = this.legueService.getLegues();
     this.sports = this.legueService.getSports();
-    this.legueService.storeBracket().subscribe(
-      (data) => console.log(data),
-      (error) => console.log(error)
-    );
+    // this.legueService.storeBracket().subscribe(
+    //   (data) => console.log(data),
+    //   (error) => console.log(error)
+    // );
     this.selectedLegue = this.legues[0];
     this.selectedSport = this.sports[0];
   }
-
 }

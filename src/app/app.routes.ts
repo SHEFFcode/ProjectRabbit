@@ -6,7 +6,7 @@ import {LoginComponent} from "./login/login.component";
 import {SportsListComponent} from "./sports-list/sports-list.component";
 export const APP_ROUTES_PROVIDERS = [
   provideRouter([
-    {path: '', redirectTo: '/sports', pathMatch: 'full'},
+    {path: '', redirectTo: '/login', pathMatch: 'full'},
     {path: 'brackets', component: SidebarComponent, children: RECIPE_ROUTES},
     {path: 'login', component: LoginComponent},
     {path: 'sports', component: SportsListComponent},

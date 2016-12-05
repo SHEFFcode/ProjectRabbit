@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Sports Matchups Available</h1>
+    <ul class="list-group">
+      <app-sport-item *ngFor="let matchup of matchups; let i = index;" [matchup]="matchup" [sportId]="i">{{matchup}}</app-sport-item>
+    </ul>
+  </div>
+</div>

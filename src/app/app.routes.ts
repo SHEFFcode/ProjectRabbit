@@ -13,6 +13,5 @@ export const APP_ROUTES_PROVIDERS = [
     {path: 'login', component: LoginComponent},
     {path: 'sports', component: SportsComponent, children: SPORTS_ROUTES},
     {path: 'addbracket', component: AddBracketComponent},
-    // {path: 'shopping-list', component: ShoppingListComponent}
   ])
 ];

@@ -6,5 +6,5 @@ import {SportsBracketsComponent} from "../sports-brackets/sports-brackets.compon
 export const SPORTS_ROUTES: RouterConfig = [
   {path: '', component: SportsListComponent},
   {path: ':id', component: BrakcetItemComponent},
-  {path: ':name', component: SportsBracketsComponent}
+  {path: 'matchups/:name', component: SportsBracketsComponent}
 ];

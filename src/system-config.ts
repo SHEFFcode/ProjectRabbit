@@ -50,6 +50,7 @@ const barrels: string[] = [
   'app/sport-item',
   'app/sports',
   'app/sports-brackets',
+  'app/matchup-list',
   /** @cli-barrel */
 ];
 
